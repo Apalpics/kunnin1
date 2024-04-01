@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main {
+public static void main (String [] args ){
+// brieve description of the program
+System.out.println("welcome this program calculates the volume and the total surface area of a cobiod ");
+// getting input formn the user
+Scanner values = new Scanner(System.in);
+  System.out.println("please enter the length of the cobiod "); 
+  double lengthk = values.nextDouble(); 
+  System.out.println("please enter the width of the cobiod "); 
+  double width = values.nextDouble(); 
+  System.out.println("please enter the debth of the cobiod"); 
+  double depth = values.nextDouble ();
+ // calculatin the values 
+  double volume = lengthk * width * depth ;
+  double surfaceArea = 2 * (lengthk * width + lengthk * depth + width * depth ); 
+// output the results
+   System.out.println("the volume of the cobiod is "+ volume );
+  System.out.println("the total surface area is "+ surfaceArea ); 
+  }
+}
